@@ -1,0 +1,73 @@
+.pokemon__card {
+    background: #F5F5F5;
+    box-sizing: border-box;
+    box-shadow: 1px 1px #888;
+    border: 4px solid #F5F5F5;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    width: 225px;
+    transition: all 0.1s ease;
+}
+
+.pokemon__card:hover {
+    transform: translateY(-5px);
+    z-index: 1;
+}
+
+.pokemon__card--pokeball {
+    background-image: url("./../../img/background_pokeball.png");
+    background-size: cover;
+    background-position-x: 45px;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+.pokemon__card--grass, .pokemon__card--bug {
+    background-color: #C8E6C9;
+}
+
+.pokemon__card--fire {
+    background-color: #ffcdd2;
+}
+
+.pokemon__card--poison, .pokemon__card--ghost {
+    background-color: #E1BEE7;
+}
+
+.pokemon__card--water {
+    background-color: #BBDEFB;
+}
+
+.pokemon__card--dragon {
+    background-color: #D1C4E9;
+}
+
+.pokemon__card--ice {
+    background-color: #BBDEFB;
+}
+
+.pokemon__card--electric {
+    background-color: #FFECB3;
+}
+
+.pokemon__card--normal {
+    background-color: #E0E0E0;
+}
+
+.pokemon__card--psychic, .pokemon__card--fairy {
+    background-color: #F8BBD0;
+}
+
+.pokemon__card--ground, .pokemon__card--fighting, .pokemon__card--rock {
+    background-color: #D7CCC8;
+}
+
+@media screen and (max-width: 400px) {
+    .pokemon__card {
+        margin: 5px 0px;
+        width: 80%;
+    }
+}
+
